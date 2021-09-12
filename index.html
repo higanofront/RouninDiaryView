@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/sanitize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>浪人DIARY</title>
@@ -13,14 +13,166 @@
 <body>
   <header>
     <div class="header-inner inner">
-      <img class="header-logo" src="./img/logo.png" alt="浪人ダイアリー">
+      <h1 class="header-logo">
+        <img class="header-logo-img" src="./img/logo.png" alt="浪人ダイアリー">
+      </h1>
       <ul class="header-menu">
-        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-pen-fancy fa-3x"></i><p>日記を書く</p></a></li>
-        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-search fa-3x"></i><p>日記を探す</p></a></li>
-        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-bullhorn fa-3x"></i><p>お知らせ</p></a></li>
-        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-user-alt fa-3x"></i><p>ログイン</p></a></li>
+        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-pen-fancy fa-3x"></i><p class="header-menu-text">日記を書く</p></a></li>
+        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-search fa-3x"></i><p class="header-menu-text">日記を探す</p></a></li>
+        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-bullhorn fa-3x"></i><p class="header-menu-text">ユーザー管理</p></a></li>
+        <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-user-alt fa-3x"></i><p class="header-menu-text">ログイン</p></a></li>
       </ul>
     </div>
   </header>
+  <main>
+    <div class="main-visual">
+      <div class="main-visual-content">
+        <h2 class="main-visual-title">浪人DIARY</h2>
+        <p class="main-visual-text">「負けたことがある」<br class="is-pc">というのが、<br> いつか大きな財産になる。</p>
+      </div>
+    </div>
+
+    <section class="search">
+      <div class="inner">
+        <div class="search-box">
+          <table class="search-table">
+            <tbody class="search-box-body">
+              <tr class="search-box-row">
+                <th class="search-box-header">キーワード</th>
+                <td class="search-box-data">
+                  <form method="get" action="#" class="search-form">
+                    <div class="search-item-container">
+                      <input type="text" size="25" placeholder="キーワード検索"><input type="submit" value="検索">
+                    </div>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="conds-open-button-container">
+            <input class="conds-open-button" type="submit" value="条件を追加">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="diary">
+      <div class="inner">
+        <div class="result">
+          <div class="count"><span class="count-number">1,000</span>件</div>
+          <div class="sort-select-container">
+            <select required>
+              <option value="">未選択</option>
+              <option value="1">新着順</option>
+              <option value="2">いいねの多い順</option>
+              <option value="3">いいねの少ない順</option>
+            </select>
+          </div>
+        </div>
+        <div class="diary-card">
+          <article>
+            <h2 class="article-title">浪人3日目</h2>
+            <h3 class="article-tag">#宅浪</h3>
+            <ul class="article-info">
+              <li class="article-info-item"><i class="fas fa-user-alt"></i></span><span>田中太郎</span></li>
+              <li class="article-info-item"><i class="fas fa-clock"></i></span><span>2021/9/21</span></li>
+              <li class="article-info-item"><i class="fas fa-pen"></i></span><span>大学受験</span></li>
+              <li class="article-info-item"><i class="fas fa-thumbs-up"></i></span><span>248</span></li>
+            </ul>
+            <p class="article-text">For an extra thick and creamy bowl, add oat bran.  It'll make for a hearty helping and also add more fiber to your meal.  If you love the taste of chai, you'll enjoy this spiced version with coriander, cinnamon, and turmeric.</p>
+          </article>
+        </div>
+        <div class="diary-card">
+          <article>
+            <h2 class="article-title">浪人3日目</h2>
+            <h3 class="article-tag">#宅浪</h3>
+            <ul class="article-info">
+              <li class="article-info-item"><i class="fas fa-user-alt"></i></span><span>田中太郎</span></li>
+              <li class="article-info-item"><i class="fas fa-clock"></i></span><span>2021/9/21</span></li>
+              <li class="article-info-item"><i class="fas fa-pen"></i></span><span>大学受験</span></li>
+              <li class="article-info-item"><i class="fas fa-thumbs-up"></i></span><span>248</span></li>
+            </ul>
+            <p class="article-text">For an extra thick and creamy bowl, add oat bran.  It'll make for a hearty helping and also add more fiber to your meal.  If you love the taste of chai, you'll enjoy this spiced version with coriander, cinnamon, and turmeric.</p>
+          </article>
+        </div>
+        <div class="diary-card">
+          <article>
+            <h2 class="article-title">浪人3日目</h2>
+            <h3 class="article-tag">#宅浪</h3>
+            <ul class="article-info">
+              <li class="article-info-item"><i class="fas fa-user-alt"></i></span><span>田中太郎</span></li>
+              <li class="article-info-item"><i class="fas fa-clock"></i></span><span>2021/9/21</span></li>
+              <li class="article-info-item"><i class="fas fa-pen"></i></span><span>大学受験</span></li>
+              <li class="article-info-item"><i class="fas fa-thumbs-up"></i></span><span>248</span></li>
+            </ul>
+            <p class="article-text">For an extra thick and creamy bowl, add oat bran.  It'll make for a hearty helping and also add more fiber to your meal.  If you love the taste of chai, you'll enjoy this spiced version with coriander, cinnamon, and turmeric.</p>
+          </article>
+        </div>
+        <div class="diary-card">
+          <article>
+            <h2 class="article-title">浪人3日目</h2>
+            <h3 class="article-tag">#宅浪</h3>
+            <ul class="article-info">
+              <li class="article-info-item"><i class="fas fa-user-alt"></i></span><span>田中太郎</span></li>
+              <li class="article-info-item"><i class="fas fa-clock"></i></span><span>2021/9/21</span></li>
+              <li class="article-info-item"><i class="fas fa-pen"></i></span><span>大学受験</span></li>
+              <li class="article-info-item"><i class="fas fa-thumbs-up"></i></span><span>248</span></li>
+            </ul>
+            <p class="article-text">For an extra thick and creamy bowl, add oat bran.  It'll make for a hearty helping and also add more fiber to your meal.  If you love the taste of chai, you'll enjoy this spiced version with coriander, cinnamon, and turmeric.</p>
+          </article>
+        </div>
+        <div class="diary-card">
+          <article>
+            <h2 class="article-title">浪人3日目</h2>
+            <h3 class="article-tag">#宅浪</h3>
+            <ul class="article-info">
+              <li class="article-info-item"><i class="fas fa-user-alt"></i></span><span>田中太郎</span></li>
+              <li class="article-info-item"><i class="fas fa-clock"></i></span><span>2021/9/21</span></li>
+              <li class="article-info-item"><i class="fas fa-pen"></i></span><span>大学受験</span></li>
+              <li class="article-info-item"><i class="fas fa-thumbs-up"></i></span><span>248</span></li>
+            </ul>
+            <p class="article-text">For an extra thick and creamy bowl, add oat bran.  It'll make for a hearty helping and also add more fiber to your meal.  If you love the taste of chai, you'll enjoy this spiced version with coriander, cinnamon, and turmeric.</p>
+          </article>
+        </div>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">最初</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">前へ</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link displaying">1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">4</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">5</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">...</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">次へ</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">最後</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2021 All rights reserved by higano.</p>
+  </footer>
 </body>
 </html>
