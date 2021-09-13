@@ -11,17 +11,42 @@
   <title>浪人DIARY</title>
 </head>
 <body>
-  <header>
+  <header id="js-header">
     <div class="header-inner inner">
-      <h1 class="header-logo">
-        <img class="header-logo-img" src="./img/logo.png" alt="浪人ダイアリー">
-      </h1>
-      <ul class="header-menu">
+      <div class="header-logo">
+        <img class="header-logo-img is-sp" src="./img/logo.png" alt="浪人ダイアリー">
+        <h1 class="header-logo-title is-pc">浪人DIARY</h1>
+      </div>
+      <ul class="header-menu is-sp">
         <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-pen-fancy fa-3x"></i><p class="header-menu-text">日記を書く</p></a></li>
         <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-search fa-3x"></i><p class="header-menu-text">日記を探す</p></a></li>
         <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-bullhorn fa-3x"></i><p class="header-menu-text">ユーザー管理</p></a></li>
         <li class="header-menu-item"><a class="header-menu-item-link" href="#" ><i class="fas fa-user-alt fa-3x"></i><p class="header-menu-text">ログイン</p></a></li>
       </ul>
+      <div class="drower-icon">
+        <div class="drower-icon-bars">
+          <div class="drower-icon-bar1"></div>
+          <div class="drower-icon-bar2"></div>
+          <div class="drower-icon-bar3"></div>
+        </div>
+      </div>
+      <div class="drower-content">
+        <div class="drower-content-items">
+          <div class="drower-content-item">
+            <a href="#">日記を書く</a>
+          </div>
+          <div class="drower-content-item">
+            <a href="#">日記を探す</a>
+          </div>
+          <div class="drower-content-item">
+            <a href="#">ユーザー管理</a>
+          </div>
+          <div class="drower-content-item">
+            <a href="#">ログイン</a>
+          </div>
+        </div>
+      </div>
+      <div class="drower-background"></div>
     </div>
   </header>
   <main>
@@ -31,7 +56,6 @@
         <p class="main-visual-text">「負けたことがある」<br class="is-pc">というのが、<br> いつか大きな財産になる。</p>
       </div>
     </div>
-
     <section class="search">
       <div class="inner">
         <div class="search-box">
@@ -55,7 +79,6 @@
         </div>
       </div>
     </section>
-
     <section class="diary">
       <div class="inner">
         <div class="result">
@@ -148,13 +171,13 @@
             <li class="pagination-item">
               <a href="#" class="pagination-link">2</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item is-sp">
               <a href="#" class="pagination-link">3</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item is-sp">
               <a href="#" class="pagination-link">4</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item is-sp">
               <a href="#" class="pagination-link">5</a>
             </li>
             <li class="pagination-item">
@@ -174,5 +197,8 @@
   <footer>
     <p>© 2021 All rights reserved by higano.</p>
   </footer>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
